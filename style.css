@@ -1,0 +1,72 @@
+/* Mengatur tampilan seluruh halaman */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* Kotak kalkulator */
+.calculator {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 280px;
+    text-align: center;
+}
+
+/* Layar display */
+#display {
+    width: 100%;
+    height: 50px;
+    font-size: 22px;
+    margin-bottom: 15px;
+    text-align: right;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Grid tombol */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Tombol umum */
+button {
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background: #f0f0f0;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Efek hover */
+button:hover {
+    background: #dcdcdc;
+}
+
+/* Tombol sama dengan */
+.equal {
+    background: #4CAF50;
+    color: white;
+    grid-row: span 2;
+}
+
+.equal:hover {
+    background: #45a049;
+}
+
+/* Tombol angka 0 lebih panjang */
+.zero {
+    grid-column: span 2;
+}
